@@ -1,0 +1,18 @@
+#
+# This script runs NUPACK executables to design a pH responsive aptamer
+# for binding within a narrow pH window
+#
+printf "************************************************** \n"
+printf "Designing PSD for narrow pH range binding Sequence        \n"
+printf "************************************************** \n"
+
+printf   "* Reading files from input directory \n"
+
+
+printf   "* Running: tubedesign \n"
+tubedesign input/PSD_bandpass;
+
+mv input/PSD_bandpass.out output/ ;
+printf   "* See results in output directory\n\n"
+
+

@@ -1,0 +1,108 @@
+NUPACK version: 3.2.2
+Backend: tubedesign
+Design index: 0
+Options: 
+    temperature: 298.150000
+    material: dna1998
+    sodium: 0.050000
+    magnesium: 0.006000
+    dangle_type: 1
+    use_long_helix: 0
+    seed: 674692
+    H_split: 3
+    N_split: 12
+    M_bad: 300.000000
+    M_reopt: 3.000000
+    M_reseed: 50.000000
+    f_split: 0.990000
+    f_passive: 0.010000
+    f_stringent: 0.990000
+    f_refocus: 0.030000
+    f_redecomp: 0.030000
+    initgc: 0.500000
+    dgclamp: -25.000000
+    allow_wobble: 0
+Root time: 0.091958
+Elapsed time: 54.338195
+Domains:
+  - Name: ATP_aptamer
+    Sequence: CACCTGGGGGAGTATTGCGGAGGAAGG
+  - Name: ATP_aptamer*
+    Sequence: CCTTCCTCCGCAATACTCCCCCAGGTG
+  - Name: DS_MM
+    Sequence: CCCCCAAGTG
+  - Name: DS_MM*
+    Sequence: CACTTGGGGG
+  - Name: linker1
+    Sequence: TTCTC
+  - Name: linker1*
+    Sequence: GAGAA
+  - Name: linker2
+    Sequence: TTTGA
+  - Name: linker2*
+    Sequence: TCAAA
+  - Name: a
+    Sequence: A
+  - Name: a*
+    Sequence: T
+  - Name: b
+    Sequence: A
+  - Name: b*
+    Sequence: T
+  - Name: c
+    Sequence: G
+  - Name: c*
+    Sequence: C
+  - Name: d
+    Sequence: A
+  - Name: d*
+    Sequence: T
+  - Name: e
+    Sequence: A
+  - Name: e*
+    Sequence: T
+  - Name: f
+    Sequence: G
+  - Name: f*
+    Sequence: C
+  - Name: g
+    Sequence: A
+  - Name: g*
+    Sequence: T
+  - Name: h
+    Sequence: A
+  - Name: h*
+    Sequence: T
+  - Name: i
+    Sequence: G
+  - Name: i*
+    Sequence: C
+  - Name: j
+    Sequence: A
+  - Name: j*
+    Sequence: T
+  - Name: loop1
+    Sequence: TCTA
+  - Name: loop1*
+    Sequence: TAGA
+  - Name: loop2
+    Sequence: TTCCG
+  - Name: loop2*
+    Sequence: CGGAA
+Strands:
+  - Name: bandpass
+    Sequence: CACCTGGGGGAGTATTGCGGAGGAAGGTTCTCAAGAAGAAGATCTATCTTCTTCTTTTCCGTTCTTCTTCTTTTGACCCCCAAGTG
+Objectives:
+  - Name: switch
+    Normalized defect: 0.189273
+    Stop fraction: 0.050000
+    Max size: 0
+    Structures:
+      - Name: PSD
+        Structure: (((.((((((......................((((((((((....))))))))))....................)))))).)))
+        Sequence : CACCTGGGGGAGTATTGCGGAGGAAGGTTCTCAAGAAGAAGATCTATCTTCTTCTTTTCCGTTCTTCTTCTTTTGACCCCCAAGTG
+        Free energy: -19.509248
+        Defect: 16.277475
+        Normalized defect: 0.189273
+        Concentration: 1.000000e-06
+        Target concentration: 1.000000e-06

@@ -1,0 +1,48 @@
+
+#set properties
+material = dna
+temperature = 25.0
+ # set seed to make design repeatable
+sodium[M]=0.05
+magnesium[M]=0.006
+# define sequence domains
+domain ATP_aptamer =CACCTGGGGGAGTATTGCGGAGGAAGG
+domain DS_MM = CCCCCAAGTG
+domain linker1 = NNNNN
+domain linker2 = NNNNN
+domain a = A
+domain b = A
+domain c = G
+domain d = A
+domain e = A
+domain f = G
+domain g = A
+domain h = A
+domain i = G
+domain j = A
+domain loop1 = NNNN
+domain loop2 = NNNNN
+
+strand bandpass = ATP_aptamer linker1 a b c d e f g h i j loop1 j* i* h* g* f* e* d* c* b* a* loop2 a* b* c* d* e* f* g* h* i* j* linker2 DS_MM
+
+# define target structure for each on-target complex
+structure PSD = (((.((((((......................((((((((((....))))))))))....................)))))).)))
+
+# define strand ordering for each on-target complex
+PSD.seq = bandpass
+
+# define target test tube containing 3 on-target complexes
+tube switch = PSD
+
+# define target concentration for each on-target complex 
+# default: 1.0e-6 (molar)
+switch.PSD.conc = 1.0e-6
+# augment tube with all off-target complexes of up to 3 strands
+# default: 0
+switch.maxsize = 0
+
+# set stop condition for normalized test tube ensemble defect 
+# default: 0.01 
+switch.stop[%] = 5
+
+

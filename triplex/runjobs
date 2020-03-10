@@ -1,0 +1,17 @@
+#
+# This script runs NUPACK executables to perform test tube design 
+# for pH-respnsive aptamer design with the triplex PSD design
+printf "************************************************** \n"
+printf "Designing triplex-based PSD Sequence        \n"
+printf "************************************************** \n"
+
+printf   "* Reading files from input directory \n"
+
+
+printf   "* Running: tubedesign \n"
+tubedesign input/PSD_triplex;
+
+mv input/PSD_triplex.out output/ ;
+printf   "* See results in output directory\n\n"
+
+
